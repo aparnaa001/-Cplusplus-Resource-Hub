@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Structure - C++ Resource Hub</title>
+    <meta name="description" content="Learn about the structure and organization of C++ programs.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <div id="logo">
+                <a href="index.html">
+                    <i class="fas fa-code" aria-label="C++ Icon"></i>
+                    <span id="site-title">C++ Resource Hub</span>
+                </a>
+            </div>
+            <nav id="navigation" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="references.html">REFERENCES</a></li>
+                    <li><a href="structure.html">STRUCTURE</a></li>
+                    <li><a href="articles.html">ARTICLES</a></li>
+                    <li><a href="forums.html">FORUMS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content">
+            <section id="structure">
+                <h1 class="section-title">C++ Program Structure</h1>
+                <div class="structure-list">
+                    <div class="structure">
+                        <h2><a href="#basic-syntax" class="toggle-section">Basic Syntax</a></h2>
+                        <div id="basic-syntax" class="section-content">
+                            <p>A C++ program consists of the following components:</p>
+                            <ul>
+                                <li><strong>Preprocessor Directives</strong>: Include headers like <code>#include &lt;iostream&gt;</code>.</li>
+                                <li><strong>Main Function</strong>: The entry point of the program, defined as <code>int main()</code>.</li>
+                                <li><strong>Statements</strong>: Executable instructions like <code>std::cout &lt;&lt; "Hello, World!";</code>.</li>
+                                <li><strong>Comments</strong>: Use <code>//</code> for single-line or <code>/* ... */</code> for multi-line comments.</li>
+                                <li><strong>Namespaces</strong>: Use <code>std</code> to avoid typing <code>std::</code> repeatedly.</li>
+                            </ul>
+                            <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello, World!";
+    return 0;
+}</code></pre>
+                        </div>
+                    </div>
+                    <div class="structure">
+                        <h2><a href="#functions" class="toggle-section">Functions</a></h2>
+                        <div id="functions" class="section-content">
+                            <p>Functions are blocks of code that perform specific tasks. Key concepts include:</p>
+                            <ul>
+                                <li><strong>Function Declaration</strong>: Define the function signature before use.</li>
+                                <li><strong>Function Definition</strong>: Implement the function logic.</li>
+                                <li><strong>Parameters and Arguments</strong>: Pass data to functions.</li>
+                                <li><strong>Return Values</strong>: Functions can return values using <code>return</code>.</li>
+                            </ul>
+                            <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int result = add(5, 3);
+    cout &lt;&lt; "Sum: " &lt;&lt; result;
+    return 0;
+}</code></pre>
+                        </div>
+                    </div>
+                    <div class="structure">
+                        <h2><a href="#classes-objects" class="toggle-section">Classes and Objects</a></h2>
+                        <div id="classes-objects" class="section-content">
+                            <p>Classes and objects are the foundation of Object-Oriented Programming (OOP) in C++.</p>
+                            <ul>
+                                <li><strong>Class Definition</strong>: Use <code>class</code> to define a blueprint for objects.</li>
+                                <li><strong>Objects</strong>: Instances of a class.</li>
+                                <li><strong>Encapsulation</strong>: Use <code>private</code> and <code>public</code> to control access.</li>
+                                <li><strong>Constructors and Destructors</strong>: Initialize and clean up objects.</li>
+                            </ul>
+                            <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+class Rectangle {
+private:
+    int width, height;
+public:
+    Rectangle(int w, int h) : width(w), height(h) {}
+    int area() {
+        return width * height;
+    }
+};
+
+int main() {
+    Rectangle rect(5, 10);
+    cout &lt;&lt; "Area: " &lt;&lt; rect.area();
+    return 0;
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="footer-content">
+                <a href="index.html">Home page</a> | <a href="privacy.do">Privacy policy</a><br>
+                © C++ Resource Hub, 2025 - All rights reserved
+            </div>
+        </footer>
+    </div>
+    <script src="scripts.js" defer></script>
+</body>
+</html>

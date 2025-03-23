@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>References - C++ Resource Hub</title>
+    <meta name="description" content="Explore the C++ Standard Library with detailed references and examples.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div id="container">
+        <header id="header">
+            <div id="logo">
+                <a href="index.html">
+                    <i class="fas fa-code" aria-label="C++ Icon"></i>
+                    <span id="site-title">C++ Resource Hub</span>
+                </a>
+            </div>
+            <nav id="navigation" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="references.html">REFERENCES</a></li>
+                    <li><a href="structure.html">STRUCTURE</a></li>
+                    <li><a href="articles.html">ARTICLES</a></li>
+                    <li><a href="forums.html">FORUMS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content">
+            <section id="references">
+                <h1 class="section-title">C++ Standard Library Reference</h1>
+                <div class="reference-list">
+                    <div class="reference">
+                        <h2><a href="#c-library" class="toggle-section">C Library</a></h2>
+                        <div id="c-library" class="section-content">
+                            <p>The C Standard Library is a collection of functions and macros that provide essential functionality for C and C++ programs.</p>
+                            <ul>
+                                <li><strong>&lt;cassert&gt;</strong>: Diagnostics library for assertions.</li>
+                                <li><strong>&lt;cctype&gt;</strong>: Functions for character handling.</li>
+                                <li><strong>&lt;cerrno&gt;</strong>: Error handling macros.</li>
+                                <li><strong>&lt;cfenv&gt;</strong>: Floating-point environment control.</li>
+                                <li><strong>&lt;cfloat&gt;</strong>: Constants for floating-point types.</li>
+                                <li><strong>&lt;cinttypes&gt;</strong>: Formatting macros for integer types.</li>
+                                <li><strong>&lt;climits&gt;</strong>: Limits for integer types.</li>
+                                <li><strong>&lt;cmath&gt;</strong>: Mathematical functions.</li>
+                                <li><strong>&lt;cstdarg&gt;</strong>: Variable argument handling.</li>
+                                <li><strong>&lt;cstddef&gt;</strong>: Standard definitions and macros.</li>
+                                <li><strong>&lt;cstdio&gt;</strong>: Input/output functions.</li>
+                                <li><strong>&lt;cstdlib&gt;</strong>: General utilities (memory allocation, random numbers, etc.).</li>
+                                <li><strong>&lt;cstring&gt;</strong>: String manipulation functions.</li>
+                                <li><strong>&lt;ctime&gt;</strong>: Time and date functions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="reference">
+                        <h2><a href="#containers" class="toggle-section">Containers</a></h2>
+                        <div id="containers" class="section-content">
+                            <p>Containers are data structures that store collections of objects. The C++ Standard Library provides several container types.</p>
+                            <ul>
+                                <li><strong>&lt;array&gt;</strong>: Fixed-size array container.</li>
+                                <li><strong>&lt;vector&gt;</strong>: Dynamic array container.</li>
+                                <li><strong>&lt;deque&gt;</strong>: Double-ended queue.</li>
+                                <li><strong>&lt;list&gt;</strong>: Doubly-linked list.</li>
+                                <li><strong>&lt;forward_list&gt;</strong>: Singly-linked list.</li>
+                                <li><strong>&lt;set&gt;</strong>: Collection of unique keys.</li>
+                                <li><strong>&lt;map&gt;</strong>: Collection of key-value pairs.</li>
+                                <li><strong>&lt;unordered_set&gt;</strong>: Hash-based set.</li>
+                                <li><strong>&lt;unordered_map&gt;</strong>: Hash-based map.</li>
+                                <li><strong>&lt;stack&gt;</strong>: LIFO stack.</li>
+                                <li><strong>&lt;queue&gt;</strong>: FIFO queue.</li>
+                                <li><strong>&lt;priority_queue&gt;</strong>: Priority queue.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="reference">
+                        <h2><a href="#algorithms" class="toggle-section">Algorithms</a></h2>
+                        <div id="algorithms" class="section-content">
+                            <p>The C++ Standard Library provides a rich set of algorithms for operations on containers and ranges.</p>
+                            <ul>
+                                <li><strong>Sorting</strong>: <code>std::sort</code>, <code>std::stable_sort</code>.</li>
+                                <li><strong>Searching</strong>: <code>std::binary_search</code>, <code>std::find</code>.</li>
+                                <li><strong>Modifying</strong>: <code>std::copy</code>, <code>std::transform</code>.</li>
+                                <li><strong>Partitioning</strong>: <code>std::partition</code>, <code>std::stable_partition</code>.</li>
+                                <li><strong>Heap Operations</strong>: <code>std::make_heap</code>, <code>std::push_heap</code>.</li>
+                                <li><strong>Min/Max</strong>: <code>std::min</code>, <code>std::max</code>, <code>std::minmax</code>.</li>
+                                <li><strong>Permutations</strong>: <code>std::next_permutation</code>, <code>std::prev_permutation</code>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="reference">
+                        <h2><a href="#utilities" class="toggle-section">Utilities</a></h2>
+                        <div id="utilities" class="section-content">
+                            <p>Utility components provide essential functionality for C++ programs.</p>
+                            <ul>
+                                <li><strong>&lt;utility&gt;</strong>: Pair and tuple utilities.</li>
+                                <li><strong>&lt;memory&gt;</strong>: Smart pointers (<code>std::unique_ptr</code>, <code>std::shared_ptr</code>).</li>
+                                <li><strong>&lt;functional&gt;</strong>: Function objects and binders.</li>
+                                <li><strong>&lt;chrono&gt;</strong>: Time utilities.</li>
+                                <li><strong>&lt;type_traits&gt;</strong>: Type traits for metaprogramming.</li>
+                                <li><strong>&lt;optional&gt;</strong>: Optional object wrapper.</li>
+                                <li><strong>&lt;variant&gt;</strong>: Type-safe union.</li>
+                                <li><strong>&lt;any&gt;</strong>: Type-safe container for single values.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="footer-content">
+                <a href="index.html">Home page</a> | <a href="privacy.do">Privacy policy</a><br>
+                © C++ Resource Hub, 2025 - All rights reserved
+            </div>
+        </footer>
+    </div>
+    <script src="scripts.js" defer></script>
+</body>
+</html>
